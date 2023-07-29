@@ -15,12 +15,12 @@ const TaskList = ({ tasks, onDeleteTask }) => {
       <tbody>
         {tasks.map((task) => (
           <tr key={task.id}>
-            <td>{task.id}</td>
+            <td>{task.taskId}</td>
             <td>{task.task}</td>
             <td>{task.dueDate}</td>
             <td>{task.priority}</td>
             <td>
-              <button
+              <button 
                 className="btn btn-danger"
                 onClick={() => onDeleteTask(task.id)}
               >

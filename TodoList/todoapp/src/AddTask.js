@@ -26,7 +26,7 @@ const AddTask = ({ onAddTask }) => {
         <div className="form-group">
         <label>Task Id</label>
         <input
-          type="number"
+          type="text"
           className="form-control"
           value={taskId}
           onChange={(e) => setTaskId(e.target.value)}
